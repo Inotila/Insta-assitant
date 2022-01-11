@@ -4,16 +4,13 @@ print("Where we help your business reach more followers and create a buget for y
 
 name = input("Please enter your name:")
 
-social_media_industry = ["Healthcare","Media","Education","Nonprofit","Restaurants","Tech", "Travel & Tourism", "Finance", "Hospitality"]
+print(f"\n Hello {name} ")
 
-number_of_followers_targeted = [1,2,3,4,5]
+print("Instgram industry \n 1.Healthcare \n 2.Media \n 3.Education \n 4.Nonprofit \n 5.Restaurants \n 6.Tech \n 7.Travel & Tourism \n 8.Finance \n 9.Hospitality ")
 
-def cost_to_reach_followers():
-    users_target = input("Please enter the number of users you would like to reach:")
+social_media_industry = input("\n Please enter which  number represents your industry:")
 
-cost_to_reach_followers()
 
-print(f"Hello {name}")
 
     
 
