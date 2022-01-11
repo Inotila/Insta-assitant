@@ -39,6 +39,6 @@ def industry_indetifier():
 
 industry_indetifier()
 
-user_goal = input("Enter how many followers you have:")
+user_goal = input("\nEnter how many followers you have:\n")
 
-print(user_goal)
+campaign_reach = input("\nEnter number of sales you would like to make from this campaign:")
