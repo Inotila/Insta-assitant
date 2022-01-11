@@ -5,6 +5,7 @@ print("Where we help your business reach more followers and create a buget for y
 name = input("Please enter your name:")
 
 social_media_acc_types = ["Retial","Artists","Music Band"]
-print(social_media_acc_types)
+
+number_of_followers_targeted = [1,2,3,4,5]
 
 print(f"Hello {name}")
