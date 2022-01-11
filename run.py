@@ -39,4 +39,6 @@ def industry_indetifier():
 
 industry_indetifier()
 
-print(f"\nYou are in the {user_industry}")
+user_goal = input("Enter how many followers you have:")
+
+print(user_goal)
