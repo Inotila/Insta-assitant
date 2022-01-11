@@ -1,3 +1,4 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+print("Welcome to Insta-Assitant\n")
+
+print("Where we help your business reach more followers and create a buget for you.\n")
+
