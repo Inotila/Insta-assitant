@@ -39,6 +39,34 @@ def industry_indetifier():
 
 industry_indetifier()
 
-user_goal = input("\nEnter how many followers you have:\n")
+user_followers = input("\nEnter how many followers you have:\n")
 
 campaign_reach = input("\nEnter number of sales you would like to make from this campaign:")
+
+def type_of_hashtag_to_use():
+    global hashtags
+    hashtags = ""
+    if int(user_followers) <= 1000:
+        hashtags = "niche"
+    elif int(user_followers) > 10000:
+        hashtags = "medium time"
+    elif int(user_followers) > 100000:
+        hashtags = "big time"
+    elif int(user_followers) > 1000000:
+        hashtags = "superstar"
+    elif int(user_followers) > 10000000:
+        hashtags = "cr7"
+    elif int(user_followers) > 100000000:
+        hashtags = "kardashian"
+    elif int(user_followers) > 500000000:
+        hashtags = "mj"
+    else:
+        print("wtf")
+    
+    return hashtags     
+    
+type_of_hashtag_to_use()
+
+type_of_hashtag_to_use()
+
+print(f"you should use these type of hashtags {hashtags}")
