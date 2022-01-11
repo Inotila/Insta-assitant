@@ -10,11 +10,10 @@ print("Instgram industry \n 1.Healthcare \n 2.Media \n 3.Education \n 4.Nonprofi
 
 def get_user_industry():
     global social_media_industry
-    social_media_industry = input("\n Please enter which  number represents your industry:")
-    print(f"you selected {social_media_industry}")
+    social_media_industry = int(input("\n Please enter which  number represents your industry:"))
 
-
-
+    if social_media_industry < 0 or social_media_industry > 9:
+        print("bull")
 
 def industry_indetifier():
     global user_industry
