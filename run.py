@@ -8,7 +8,13 @@ print(f"\n Hello {name} ")
 
 print("Instgram industry \n 1.Healthcare \n 2.Media \n 3.Education \n 4.Nonprofit \n 5.Restaurants \n 6.Tech \n 7.Travel & Tourism \n 8.Finance \n 9.Hospitality ")
 
-social_media_industry = input("\n Please enter which  number represents your industry:")
+def get_user_industry():
+    global social_media_industry
+    social_media_industry = input("\n Please enter which  number represents your industry:")
+    print(f"you selected {social_media_industry}")
+
+
+
 
 def industry_indetifier():
     global user_industry
@@ -37,9 +43,12 @@ def industry_indetifier():
     
     return user_industry
 
-user_followers = input("\nEnter how many followers you have:\n")
+def get_users_followers():
+    global user_followers
+    user_followers = input("\nEnter how many followers you have:\n")
 
-campaign_reach = input("\nEnter number of sales you would like to make from this campaign:")
+def get_users_sales_goals():
+    campaign_reach = input("\nEnter number of sales you would like to make from this campaign:")
 
 def type_of_hashtag_to_use():
     global hashtags
@@ -59,12 +68,13 @@ def type_of_hashtag_to_use():
     else:
         print("wtf")
     
-    return hashtags     
-
-
+    return hashtags   
 
 def main():
+    get_user_industry()
     industry_indetifier()
+    get_users_followers()
+    get_users_sales_goals()
     type_of_hashtag_to_use()
 
 main()
