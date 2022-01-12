@@ -126,15 +126,27 @@ def industry_indetifier():
         user_industry = finance
     elif social_media_industry == 9:
         user_industry = hospitality
-    else:
-        print("stupid")
     
     return user_industry
 
 
 def get_users_followers():
     global user_followers
-    user_followers = input("\nEnter how many followers you have:\n")
+
+    while True:
+        user_followers = input("\nEnter how many followers you have:\n")
+
+        try:
+            user_follower_entry = int(user_followers)
+
+            if type(user_follower_entry) != int:
+                raise ValueError(
+                    f"Exactly 6 values required, you provided {user_industry_selected}"
+                    )
+        except ValueError as e:
+            print(f"Invalid data: {e}, please try again.\n")
+
+
 
 
 def get_users_sales_goals():
