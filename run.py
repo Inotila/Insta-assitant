@@ -10,7 +10,12 @@ print("Instgram industry \n 1.Healthcare \n 2.Media \n 3.Education \n 4.Nonprofi
 
 def get_user_industry():
     global social_media_industry
+
     social_media_industry = input("\n Please enter which  number represents your industry:")
+
+    global industry_input_valid
+
+    industry_input_valid = True
 
 
 health_care = {
