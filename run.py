@@ -42,14 +42,14 @@ def get_user_industry():
 
 health_care = {
     "industry": "Healthcare",
-    "best time to post": ["Sunday: 8–9 a.m.", "Tuesday: 8 a.m.–noon"," Tuesday: 5–8 p.m."],
+    "best time to post": ["Sunday: 8–9 a.m.", "Tuesday: 8 a.m.–noon", " Tuesday: 5–8 p.m."],
     "Best day": "Monday, Tuesday",
     "hashtags": "#HealthCare",
 }
 
 media = {
     "industry": "Media",
-    "best time to post": ["Tuesday: 1–5 p.m.", "Wednesday: 11 a.m","  Thursday: 8–9 a.m."],
+    "best time to post": ["Tuesday: 1–5 p.m.", "Wednesday: 11 a.m", "Thursday: 8–9 a.m."],
     "Best day": "Tuesday, Wednesday, Thursday",
     "hashtags": "#media",
 }
@@ -61,7 +61,7 @@ education = {
     "hashtags": "#education",
     }
 
-nonprofit= {
+nonprofit = {
     "industry": "Nonprofit",
     "best time to post": ["Wednesday: 10 a.m.–6 p.m."],
     "Best day": "Wednesday",
@@ -103,6 +103,7 @@ hospitality = {
     "hashtags": "#education",
     }
 
+
 def industry_indetifier():
     global user_industry
     user_industry = ""
@@ -130,12 +131,15 @@ def industry_indetifier():
     
     return user_industry
 
+
 def get_users_followers():
     global user_followers
     user_followers = input("\nEnter how many followers you have:\n")
 
+
 def get_users_sales_goals():
     campaign_reach = input("\nEnter number of sales you would like to make from this campaign:")
+
 
 def type_of_hashtag_to_use():
     global hashtags
@@ -157,12 +161,14 @@ def type_of_hashtag_to_use():
     
     return hashtags   
 
+
 def main():
     get_user_industry()
     industry_indetifier()
     get_users_followers()
     get_users_sales_goals()
     type_of_hashtag_to_use()
+
 
 main()
 
