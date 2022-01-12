@@ -17,6 +17,13 @@ def get_user_industry():
 
     industry_input_valid = True
 
+    global user_industry_selected
+
+    user_industry_selected = int(social_media_industry)
+
+    print(user_industry_selected)
+    print(type(user_industry_selected))
+
 
 health_care = {
     "industry": "Healthcare",
