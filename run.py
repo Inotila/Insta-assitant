@@ -19,10 +19,24 @@ def get_user_industry():
 
     global user_industry_selected
 
-    user_industry_selected = int(social_media_industry)
+    user_industry_selected = social_media_industry
 
-    print(user_industry_selected)
-    print(type(user_industry_selected))
+    try:
+        user_industry_selected = int(social_media_industry)
+        if type(user_industry_selected) != int and user_industry_selected <= 0:
+            raise ValueError(
+                f"Exactly 6 values required, you provided {user_industry_selected}"
+            )
+        elif user_industry_selected > 9:
+            raise ValueError(
+                f"Exactly 6 values required, you provided {user_industry_selected}"
+            )
+        elif user_industry_selected < 1:
+            raise ValueError(
+                f"Exactly 6 values required, you provided {user_industry_selected}"
+            )        
+    except ValueError as e:
+        print(f"Invalid data: {e}, please try again.\n")
 
 
 health_care = {
