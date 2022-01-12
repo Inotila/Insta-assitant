@@ -8,35 +8,36 @@ print(f"\n Hello {name} ")
 
 print("Instgram industry \n 1.Healthcare \n 2.Media \n 3.Education \n 4.Nonprofit \n 5.Restaurants \n 6.Tech \n 7.Travel & Tourism \n 8.Finance \n 9.Hospitality ")
 
+
 def get_user_industry():
     global social_media_industry
-
-    social_media_industry = input("\n Please enter which  number represents your industry:")
-
-    global industry_input_valid
-
-    industry_input_valid = True
-
+    
     global user_industry_selected
 
-    user_industry_selected = social_media_industry
+    while True:
+        social_media_industry = input("\n Please enter which  number represents your industry:")
+        try:          
+            user_industry_selected = int(social_media_industry)
+            
+            if type(user_industry_selected) != int:
+                raise ValueError(
+                    f"Exactly 6 values required, you provided {user_industry_selected}"
+                    )
+                    
+            elif user_industry_selected > 9:
+                raise ValueError(
+                    f"Exactly 6 values required, you provided {user_industry_selected}"
+                    )
+            elif user_industry_selected < 1:
+                raise ValueError(
+                    f"Exactly 6 values required, you provided {user_industry_selected}"
+                    )
+            else:
+                break                    
+        except ValueError as e:
+            print(f"Invalid data: {e}, please try again.\n")
 
-    try:
-        user_industry_selected = int(social_media_industry)
-        if type(user_industry_selected) != int and user_industry_selected <= 0:
-            raise ValueError(
-                f"Exactly 6 values required, you provided {user_industry_selected}"
-            )
-        elif user_industry_selected > 9:
-            raise ValueError(
-                f"Exactly 6 values required, you provided {user_industry_selected}"
-            )
-        elif user_industry_selected < 1:
-            raise ValueError(
-                f"Exactly 6 values required, you provided {user_industry_selected}"
-            )        
-    except ValueError as e:
-        print(f"Invalid data: {e}, please try again.\n")
+    return user_industry_selected
 
 
 health_care = {
@@ -58,49 +59,49 @@ education = {
     "best time to post": ["Friday: 4–5 a.m.", "Thursday: 2 p.m."],
     "Best day": "Friday",
     "hashtags": "#education",
-}
+    }
 
 nonprofit= {
     "industry": "Nonprofit",
     "best time to post": ["Wednesday: 10 a.m.–6 p.m."],
     "Best day": "Wednesday",
     "hashtags": "#nonprofit",
-}
+    }
 
 restaurants = {
     "industry": "Restaurants",
     "best time to post": ["Monday: 9 a.m.–1 p.m."],
     "Best day": "Monday",
     "hashtags": "#restaurants",
-}
+    }
 
 tech = {
     "industry": "Tech",
     "best time to post": ["Monday: 10–11 a.m.", "Monday: 2–5 p.m.","Monday: 8 p.m.","Tuesday: 10 a.m.–1 p.m","Thursday: noon","Friday: 11 a.m"],
     "Best day": "Monday",
     "hashtags": "#Tech",
-}
+    }
 
 travel_and_tourism = {
     "industry": "Travel & Tourism",
     "best time to post": ["Monday: 11 a.m–3 p.m.","Thursday: 9 a.m.–1 p.m.", " Friday: 10 a.m.–noon"],
     "Best day": "Thursday",
     "hashtags": "#education",
-}
+    }
 
 finance = {
     "industry": "Finance",
     "best time to post": ["Monday: 5 p.m.","Wednesday: 9 a.m.–1 p.m.", " Friday: 11 a.m."],
     "Best day": "Wednesday",
     "hashtags": "#education",
-}
+    }
 
 hospitality = {
     "industry": "Hospitality",
     "best time to post": ["Wednesday: noon","Thursday : 3–4 p.m.", "Friday: 8 a.m.–noon"],
     "Best day": "Friday",
     "hashtags": "#education",
-}
+    }
 
 def industry_indetifier():
     global user_industry
