@@ -100,23 +100,23 @@ def industry_indetifier():
     user_industry = ""
 
     if social_media_industry == 1:
-        user_industry = "Healthcare"
+        user_industry = health_care
     elif social_media_industry == 2:
-        user_industry = "Media"
+        user_industry = media
     elif social_media_industry == 3:
-        user_industry = "Education"
+        user_industry = education
     elif social_media_industry == 4:
-        user_industry = "Nonprofit"
+        user_industry = nonprofit
     elif social_media_industry == 5:
-        user_industry = "Restaurants"
+        user_industry = restaurants
     elif social_media_industry == 6:
-        user_industry = "Tech"
+        user_industry = tech
     elif social_media_industry == 7:
-        user_industry = "Travel & Tourism"
+        user_industry = travel_and_tourism
     elif social_media_industry == 8:
-        user_industry = "Finance"
+        user_industry = finance
     elif social_media_industry == 9:
-        user_industry = "Hospitality"
+        user_industry = hospitality
     else:
         print("stupid")
     
@@ -159,3 +159,4 @@ def main():
 main()
 
 print(f"you should use these type of hashtags {hashtags}")
+print(user_industry)
