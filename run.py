@@ -92,13 +92,13 @@ def industry_indetifier():
     global user_industry
     user_industry = ""
 
-    if social_media_industry == 1:
+    if user_industry_selected == 1:
         user_industry = health_care
-    elif social_media_industry == 2:
+    elif user_industry_selected == 2:
         user_industry = media
-    elif social_media_industry == 3:
+    elif user_industry_selected == 3:
         user_industry = education
-    elif social_media_industry == 4:
+    elif user_industry_selected == 4:
         user_industry = nonprofit
     elif social_media_industry == 5:
         user_industry = restaurants
