@@ -32,6 +32,69 @@ def get_user_industry():
         if social_media_industry > 0 and social_media_industry < 10:
             user_industry_input = True
 
+health_care = {
+    "industry": "Healthcare",
+    "best time to post": ["Sunday: 8–9 a.m.", "Tuesday: 8 a.m.–noon"," Tuesday: 5–8 p.m."],
+    "Best day": "Monday, Tuesday",
+    "hashtags": "#HealthCare",
+}
+
+media = {
+    "industry": "Media",
+    "best time to post": ["Tuesday: 1–5 p.m.", "Wednesday: 11 a.m","  Thursday: 8–9 a.m."],
+    "Best day": "Tuesday, Wednesday, Thursday",
+    "hashtags": "#media",
+}
+
+education = {
+    "industry": "Education",
+    "best time to post": ["Friday: 4–5 a.m.", "Thursday: 2 p.m."],
+    "Best day": "Friday",
+    "hashtags": "#education",
+}
+
+nonprofit= {
+    "industry": "Nonprofit",
+    "best time to post": ["Wednesday: 10 a.m.–6 p.m."],
+    "Best day": "Wednesday",
+    "hashtags": "#nonprofit",
+}
+
+restaurants = {
+    "industry": "Restaurants",
+    "best time to post": ["Monday: 9 a.m.–1 p.m."],
+    "Best day": "Monday",
+    "hashtags": "#restaurants",
+}
+
+tech = {
+    "industry": "Tech",
+    "best time to post": ["Monday: 10–11 a.m.", "Monday: 2–5 p.m.","Monday: 8 p.m.","Tuesday: 10 a.m.–1 p.m","Thursday: noon","Friday: 11 a.m"],
+    "Best day": "Monday",
+    "hashtags": "#Tech",
+}
+
+travel_and_tourism = {
+    "industry": "Travel & Tourism",
+    "best time to post": ["Monday: 11 a.m–3 p.m.","Thursday: 9 a.m.–1 p.m.", " Friday: 10 a.m.–noon"],
+    "Best day": "Thursday",
+    "hashtags": "#education",
+}
+
+finance = {
+    "industry": "Finance",
+    "best time to post": ["Monday: 5 p.m.","Wednesday: 9 a.m.–1 p.m.", " Friday: 11 a.m."],
+    "Best day": "Wednesday",
+    "hashtags": "#education",
+}
+
+hospitality = {
+    "industry": "Hospitality",
+    "best time to post": ["Wednesday: noon","Thursday : 3–4 p.m.", "Friday: 8 a.m.–noon"],
+    "Best day": "Friday",
+    "hashtags": "#education",
+}
+
 def industry_indetifier():
     global user_industry
     user_industry = ""
