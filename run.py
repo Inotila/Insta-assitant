@@ -77,28 +77,28 @@ restaurants = {
 
 tech = {
     "industry": "Tech",
-    "best time to post": ["Monday: 10–11 a.m.", "Monday: 2–5 p.m.","Monday: 8 p.m.","Tuesday: 10 a.m.–1 p.m","Thursday: noon","Friday: 11 a.m"],
+    "best time to post": ["Monday: 10–11 a.m.", "Monday: 2–5 p.m.", "Monday: 8 p.m.", "Tuesday: 10 a.m.–1 p.m", "Thursday: noon", "Friday: 11 a.m"],
     "Best day": "Monday",
     "hashtags": "#Tech",
     }
 
 travel_and_tourism = {
     "industry": "Travel & Tourism",
-    "best time to post": ["Monday: 11 a.m–3 p.m.","Thursday: 9 a.m.–1 p.m.", " Friday: 10 a.m.–noon"],
+    "best time to post": ["Monday: 11 a.m–3 p.m.", "Thursday: 9 a.m.–1 p.m.", " Friday: 10 a.m.–noon"],
     "Best day": "Thursday",
     "hashtags": "#education",
     }
 
 finance = {
     "industry": "Finance",
-    "best time to post": ["Monday: 5 p.m.","Wednesday: 9 a.m.–1 p.m.", " Friday: 11 a.m."],
+    "best time to post": ["Monday: 5 p.m.", "Wednesday: 9 a.m.–1 p.m.", " Friday: 11 a.m."],
     "Best day": "Wednesday",
     "hashtags": "#education",
     }
 
 hospitality = {
     "industry": "Hospitality",
-    "best time to post": ["Wednesday: noon","Thursday : 3–4 p.m.", "Friday: 8 a.m.–noon"],
+    "best time to post": ["Wednesday: noon", "Thursday : 3–4 p.m.", "Friday: 8 a.m.–noon"],
     "Best day": "Friday",
     "hashtags": "#education",
     }
