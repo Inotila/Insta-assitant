@@ -143,10 +143,20 @@ def get_users_followers():
                 raise ValueError(
                     f"Exactly 6 values required, you provided {user_industry_selected}"
                     )
+            elif user_follower_entry < 0:
+                raise ValueError(
+                    f"Exactly 6 values required, you provided {user_industry_selected}"
+                    )
+            elif user_follower_entry > 300000000:
+                raise ValueError(
+                    f"Exactly 6 values required, you provided {user_industry_selected}"
+                    )
+            else:
+                break
         except ValueError as e:
             print(f"Invalid data: {e}, please try again.\n")
 
-
+    return user_follower_entry
 
 
 def get_users_sales_goals():
