@@ -1,12 +1,15 @@
 print("Welcome to Insta-Assitant\n")
 
-print("Where we help your business reach more followers and create a buget for you.\n")
+print("Where we help your business reach more\
+    followers and create a buget for you.\n")
 
 name = input("Please enter your name:")
 
 print(f"\n Hello {name} ")
 
-print("Instgram industry \n 1.Healthcare \n 2.Media \n 3.Education \n 4.Nonprofit \n 5.Restaurants \n 6.Tech \n 7.Travel & Tourism \n 8.Finance \n 9.Hospitality ")
+print("Instgram industry \n 1.Healthcare \n 2.Media \n\
+    3.Education \n 4.Nonprofit \n 5.Restaurants \n 6.Tech\
+        \n 7.Travel & Tourism \n 8.Finance \n 9.Hospitality ")
 
 
 def get_user_industry():
@@ -15,22 +18,26 @@ def get_user_industry():
     global user_industry_selected
 
     while True:
-        social_media_industry = input("\n Please enter which  number represents your industry:")
+        social_media_industry = input("\n Please enter which  number\
+            represents your industry:")
         try:          
             user_industry_selected = int(social_media_industry)
             
             if type(user_industry_selected) != int:
                 raise ValueError(
-                    f"Exactly 6 values required, you provided {user_industry_selected}"
+                    f"Exactly 6 values required,\
+                         you provided {user_industry_selected}"
                     )
                     
             elif user_industry_selected > 9:
                 raise ValueError(
-                    f"Exactly 6 values required, you provided {user_industry_selected}"
+                    f"Exactly 6 values required,\
+                         you provided {user_industry_selected}"
                     )
             elif user_industry_selected < 1:
                 raise ValueError(
-                    f"Exactly 6 values required, you provided {user_industry_selected}"
+                    f"Exactly 6 values required,\
+                         you provided {user_industry_selected}"
                     )
             else:
                 break                    
@@ -160,7 +167,29 @@ def get_users_followers():
 
 
 def get_users_sales_goals():
-    campaign_reach = input("\nEnter number of sales you would like to make from this campaign:")
+    global campaign_reach
+
+    while True:
+        campaign_reach = input("\nEnter number of sales you would like to make from this campaign:")
+
+        try:
+            users_sales_entery = int(campaign_reach)
+
+            if type(users_sales_entery) != int:
+                raise ValueError(
+                    f"Exactly 6 values required, you provided {user_industry_selected}"
+                    )
+            else:
+                break
+        except ValueError as e:
+            print(f"Invalid data: {e}, please try again.\n")
+
+    return users_sales_entery
+
+
+
+
+    
 
 
 def type_of_hashtag_to_use():
