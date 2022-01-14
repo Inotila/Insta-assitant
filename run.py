@@ -201,7 +201,8 @@ def cost_calculation():
     Calculates how much the user will need to spend in order to sales target
     """
     global total_cost
-    total_cost = int(campaign_reach) * 12
+    campaign_reach_needed = int(campaign_reach) * 1.25
+    total_cost = campaign_reach_needed * 1.33
 
     return total_cost
 
