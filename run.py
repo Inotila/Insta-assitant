@@ -213,7 +213,7 @@ def ad_duration():
                 raise ValueError(
                     f"Exactly 6 values required, you provided {user_industry_selected}"
                     )
-            elif users_duration_entery == 0:
+            elif users_duration_entery <= 0:
                 raise ValueError(
                     f"Exactly 6 values required, you provided {user_industry_selected}"
                     )
@@ -230,6 +230,7 @@ def cost_calculation():
     Calculates how much the user will need to spend in order to sales target
     """
     global total_cost
+    average_cost_per_day =   total_cost / int(duration)
     campaign_reach_needed = int(campaign_reach) * 1.25
     total_cost = campaign_reach_needed * 1.33
 
@@ -275,3 +276,5 @@ main()
 print(f"you should use these type of hashtags {hashtags}")
 print(user_industry)
 print(f"this is how much you must spend {total_cost} Dollars on your media campaign")
+print(f"this is how much you days your add will last {duration}")
+
