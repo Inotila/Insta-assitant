@@ -1,34 +1,30 @@
 print("Welcome to Insta-Assitant\n")
 
-print("Where we help your business reach more\
-    followers and create a buget for you.\n")
+print("Where we help your business reach more followers and create a buget for you.\n")
 
 name = input("Please enter your name:")
 
 print(f"\n Hello {name} ")
 
-print("Instgram industry \n 1.Healthcare \n 2.Media \n\
-    3.Education \n 4.Nonprofit \n 5.Restaurants \n 6.Tech\
+print("Instgram industry \n 1.Healthcare \n 2.Media \n 3.Education \n 4.Nonprofit \n 5.Restaurants \n 6.Tech\
         \n 7.Travel & Tourism \n 8.Finance \n 9.Hospitality ")
 
 
 def get_user_industry():
+    """
+    this function takes the input for what industry the user is in
+    """
     global social_media_industry
-    
     global user_industry_selected
 
     while True:
-        social_media_industry = input("\n Please enter which  number\
-            represents your industry:")
+        social_media_industry = input("\n Please enter which  number represents your industry:")
         try:          
             user_industry_selected = int(social_media_industry)
-            
             if type(user_industry_selected) != int:
                 raise ValueError(
-                    f"Exactly 6 values required,\
-                         you provided {user_industry_selected}"
-                    )
-                    
+                    f"Exactly 6 values required, you provided {user_industry_selected}"
+                    )      
             elif user_industry_selected > 9:
                 raise ValueError(
                     f"Exactly 6 values required,\
@@ -112,6 +108,10 @@ hospitality = {
 
 
 def industry_indetifier():
+    """
+    This function  matches the input of the users industry location,
+    to which object/industry it is in
+    """
     global user_industry
     user_industry = ""
 
@@ -138,6 +138,9 @@ def industry_indetifier():
 
 
 def get_users_followers():
+    """
+    this takes a validated input for how man followers the user has
+    """
     global user_followers
 
     while True:
@@ -167,6 +170,9 @@ def get_users_followers():
 
 
 def get_users_sales_goals():
+    """
+    this takes a validated input for how man sales the user wants to make from their campaign
+    """
     global campaign_reach
 
     while True:
@@ -187,6 +193,9 @@ def get_users_sales_goals():
     return users_sales_entery
 
 def cost_calculation():
+    """
+    Calculates how much the user will need to spend in order to sales target
+    """
     global total_cost
     total_cost = int(campaign_reach) * 12
 
@@ -215,6 +224,9 @@ def type_of_hashtag_to_use():
 
 
 def main():
+    """
+    This is the storage for all the functions
+    """
     get_user_industry()
     industry_indetifier()
     get_users_followers()
@@ -227,4 +239,4 @@ main()
 
 print(f"you should use these type of hashtags {hashtags}")
 print(user_industry)
-print(f"this is how much you must spend {total_cost}")
+print(f"this is how much you must spend {total_cost} Dollars on your media campaign")
