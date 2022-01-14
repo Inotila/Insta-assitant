@@ -185,6 +185,10 @@ def get_users_sales_goals():
                 raise ValueError(
                     f"Exactly 6 values required, you provided {user_industry_selected}"
                     )
+            elif users_sales_entery < 133:
+                raise ValueError(
+                    f"Exactly 6 values required, you provided {user_industry_selected}"
+                    )
             else:
                 break
         except ValueError as e:
