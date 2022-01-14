@@ -186,10 +186,11 @@ def get_users_sales_goals():
 
     return users_sales_entery
 
+def cost_calculation():
+    global total_cost
+    total_cost = int(campaign_reach) * 12
 
-
-
-    
+    return total_cost
 
 
 def type_of_hashtag_to_use():
@@ -219,9 +220,11 @@ def main():
     get_users_followers()
     get_users_sales_goals()
     type_of_hashtag_to_use()
+    cost_calculation()
 
 
 main()
 
 print(f"you should use these type of hashtags {hashtags}")
 print(user_industry)
+print(f"this is how much you must spend {total_cost}")
