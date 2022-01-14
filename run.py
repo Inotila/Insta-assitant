@@ -196,6 +196,35 @@ def get_users_sales_goals():
 
     return users_sales_entery
 
+
+def ad_duration():
+    """
+    this takes a validated input for how long the campaign will last
+    """
+    global duration
+
+    while True:
+        duration = input("\nEnter number of days the campaign will last:")
+
+        try:
+            users_duration_entery = int(duration)
+
+            if type(users_duration_entery) != int:
+                raise ValueError(
+                    f"Exactly 6 values required, you provided {user_industry_selected}"
+                    )
+            elif users_duration_entery == 0:
+                raise ValueError(
+                    f"Exactly 6 values required, you provided {user_industry_selected}"
+                    )
+            else:
+                break
+        except ValueError as e:
+            print(f"Invalid data: {e}, please try again.\n")
+
+    return users_duration_entery
+
+
 def cost_calculation():
     """
     Calculates how much the user will need to spend in order to sales target
@@ -238,6 +267,7 @@ def main():
     get_users_sales_goals()
     type_of_hashtag_to_use()
     cost_calculation()
+    ad_duration()
 
 
 main()
