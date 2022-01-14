@@ -23,17 +23,15 @@ def get_user_industry():
             user_industry_selected = int(social_media_industry)
             if type(user_industry_selected) != int:
                 raise ValueError(
-                    f"Exactly 6 values required, you provided {user_industry_selected}"
+                    f"Enter only a number that is from the list, you provided {user_industry_selected}"
                     )      
             elif user_industry_selected > 9:
                 raise ValueError(
-                    f"Exactly 6 values required,\
-                         you provided {user_industry_selected}"
+                    f"Enter only a number that is from the list, you provided, you provided {user_industry_selected}"
                     )
             elif user_industry_selected < 1:
                 raise ValueError(
-                    f"Exactly 6 values required,\
-                         you provided {user_industry_selected}"
+                    f"Enter only a number that is from the list, you provided, you provided {user_industry_selected}"
                     )
             else:
                 break                    
@@ -151,15 +149,15 @@ def get_users_followers():
 
             if type(user_follower_entry) != int:
                 raise ValueError(
-                    f"Exactly 6 values required, you provided {user_industry_selected}"
+                    f"Please enter a number, you provided {user_industry_selected}"
                     )
             elif user_follower_entry < 0:
                 raise ValueError(
-                    f"Exactly 6 values required, you provided {user_industry_selected}"
+                    f"You can't have negative followers, you provided {user_industry_selected}"
                     )
-            elif user_follower_entry > 300000000:
+            elif user_follower_entry > 388000000:
                 raise ValueError(
-                    f"Exactly 6 values required, you provided {user_industry_selected}"
+                    f"The profile with the highest number of followers has 388 million, you provided {user_industry_selected}"
                     )
             else:
                 break
@@ -183,11 +181,11 @@ def get_users_sales_goals():
 
             if type(users_sales_entery) != int:
                 raise ValueError(
-                    f"Exactly 6 values required, you provided {user_industry_selected}"
+                    f"Please enter a number, you provided {user_industry_selected}"
                     )
             elif users_sales_entery < 133:
                 raise ValueError(
-                    f"Exactly 6 values required, you provided {user_industry_selected}"
+                    f"Instgram has a minimum requirement of at 133 audiance reach, you provided {user_industry_selected}"
                     )
             else:
                 break
@@ -211,11 +209,11 @@ def ad_duration():
 
             if type(users_duration_entery) != int:
                 raise ValueError(
-                    f"Exactly 6 values required, you provided {user_industry_selected}"
+                    f"Please enter a number, you provided {user_industry_selected}"
                     )
             elif users_duration_entery <= 0:
                 raise ValueError(
-                    f"Exactly 6 values required, you provided {user_industry_selected}"
+                    f"Please enter a number from 1 or higher, you provided {user_industry_selected}"
                     )
             else:
                 break
@@ -237,6 +235,9 @@ def cost_calculation():
 
 
 def average_cost():
+    """
+    Calculates how much the user will need to spend in order to sales target
+    """
     global average_cost_per_day
     average_cost_per_day = total_cost / int(duration)
 
