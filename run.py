@@ -281,14 +281,17 @@ def main():
 
 main()
 
-print(f"you should use these type of hashtags {hashtags}")
-print(user_industry)
-print(f"this is how much you must spend {total_cost} Dollars on your media campaign")
-print(f"this is how much you days your add will last {duration}")
-print(f"this is how much your add will cost per day {average_cost_per_day}")
 
-print(F"You selected {} as your industry")
+print(f"\nYou selected AADDADA as your industry {user_follower_entry}")
 
-print(F"Your campaign will last {} as your industry")
+print(f"\nFor your current followers:{user_follower_entry} these hashtags will give you the best exposure{hashtag}")
 
-print(F"Your campaign will aprroximaitely cost {} Dollars per day")
+print(f"\nYour campaign will last {duration } days")
+
+print(f"\nYour campaign will aprroximaitely cost: {average_cost_per_day} Dollars per day")
+
+print(f"\nYour campaign will cost: {total_cost} Dollars in total")
+
+print(f"\nThe best times to post are {user_follower_entry}")
+
+print(f"\nThe best day to post are {user_follower_entry}")
