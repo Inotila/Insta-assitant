@@ -230,11 +230,17 @@ def cost_calculation():
     Calculates how much the user will need to spend in order to sales target
     """
     global total_cost
-    average_cost_per_day =   total_cost / int(duration)
     campaign_reach_needed = int(campaign_reach) * 1.25
     total_cost = campaign_reach_needed * 1.33
 
     return total_cost
+
+
+def average_cost():
+    global average_cost_per_day
+    average_cost_per_day = total_cost / int(duration)
+
+    return average_cost_per_day
 
 
 def type_of_hashtag_to_use():
@@ -269,6 +275,7 @@ def main():
     type_of_hashtag_to_use()
     cost_calculation()
     ad_duration()
+    average_cost()
 
 
 main()
@@ -277,4 +284,4 @@ print(f"you should use these type of hashtags {hashtags}")
 print(user_industry)
 print(f"this is how much you must spend {total_cost} Dollars on your media campaign")
 print(f"this is how much you days your add will last {duration}")
-
+print(f"this is how much your add will cost per day {average_cost_per_day}")
