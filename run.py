@@ -286,3 +286,9 @@ print(user_industry)
 print(f"this is how much you must spend {total_cost} Dollars on your media campaign")
 print(f"this is how much you days your add will last {duration}")
 print(f"this is how much your add will cost per day {average_cost_per_day}")
+
+print(F"You selected {} as your industry")
+
+print(F"Your campaign will last {} as your industry")
+
+print(F"Your campaign will aprroximaitely cost {} Dollars per day")
