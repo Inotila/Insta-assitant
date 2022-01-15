@@ -4,43 +4,6 @@ print("Where we help your business reach more followers and create a buget for y
 
 name = input("Please enter your name:")
 
-print(f"\n Hello {name} ")
-
-print("Instgram industry \n 1.Healthcare \n 2.Media \n 3.Education \n 4.Nonprofit \n 5.Restaurants \n 6.Tech\
-        \n 7.Travel & Tourism \n 8.Finance \n 9.Hospitality ")
-
-
-def get_user_industry():
-    """
-    this function takes the input for what industry the user is in
-    """
-    global social_media_industry
-    global user_industry_selected
-
-    while True:
-        social_media_industry = input("\n Please enter which  number represents your industry:")
-        try:          
-            user_industry_selected = int(social_media_industry)
-            if type(user_industry_selected) != int:
-                raise ValueError(
-                    f"Enter only a number that is from the list, you provided {user_industry_selected}"
-                    )      
-            elif user_industry_selected > 9:
-                raise ValueError(
-                    f"Enter only a number that is from the list, you provided, you provided {user_industry_selected}"
-                    )
-            elif user_industry_selected < 1:
-                raise ValueError(
-                    f"Enter only a number that is from the list, you provided, you provided {user_industry_selected}"
-                    )
-            else:
-                break                    
-        except ValueError as e:
-            print(f"Invalid data: {e}, please try again.\n")
-
-    return user_industry_selected
-
-
 health_care = {
     "industry": "Healthcare",
     "best time to post": ["Sunday: 8–9 a.m.", "Tuesday: 8 a.m.–noon", " Tuesday: 5–8 p.m."],
@@ -110,8 +73,46 @@ def industry_indetifier():
     This function  matches the input of the users industry location,
     to which object/industry it is in
     """
+
+
+print(f"\n Hello {name} ")
+
+print("Instgram industry \n 1.Healthcare \n 2.Media \n 3.Education \n 4.Nonprofit \n 5.Restaurants \n 6.Tech\
+        \n 7.Travel & Tourism \n 8.Finance \n 9.Hospitality ")
+
+
+def get_user_industry():
+    """
+    this function takes the input for what industry the user is in
+    """
+    global social_media_industry
+    global user_industry_selected
+
+    while True:
+        social_media_industry = input("\n Please enter which  number represents your industry:\n")
+        try:          
+            user_industry_selected = int(social_media_industry)
+            if type(user_industry_selected) != int:
+                raise ValueError(
+                    f"Enter only a number that is from the list, you provided {user_industry_selected}"
+                    )      
+            elif user_industry_selected > 9:
+                raise ValueError(
+                    f"Enter only a number that is from the list, you provided, you provided {user_industry_selected}"
+                    )
+            elif user_industry_selected < 1:
+                raise ValueError(
+                    f"Enter only a number that is from the list, you provided, you provided {user_industry_selected}"
+                    )
+            else:
+                break                    
+        except ValueError as e:
+            print(f"Invalid data: {e}, please try again.\n")
+
+    return user_industry_selected
+
     global user_industry
-    user_industry = ""
+    user_industry = "Empty str"
 
     if user_industry_selected == 1:
         user_industry = health_care
@@ -174,7 +175,7 @@ def get_users_sales_goals():
     global campaign_reach
 
     while True:
-        campaign_reach = input("\nEnter number of sales you would like to make from this campaign:")
+        campaign_reach = input("\nEnter number of sales you would like to make from this campaign:\n")
 
         try:
             users_sales_entery = int(campaign_reach)
@@ -202,7 +203,7 @@ def ad_duration():
     global duration
 
     while True:
-        duration = input("\nEnter number of days the campaign will last:")
+        duration = input("\nEnter number of days the campaign will last:\n")
 
         try:
             users_duration_entery = int(duration)
@@ -282,16 +283,12 @@ def main():
 main()
 
 
-print(f"\nYou selected AADDADA as your industry {user_follower_entry}")
+print(f"\nYou selected AADDADA as your industry {user_followers}")
 
-print(f"\nFor your current followers:{user_follower_entry} these hashtags will give you the best exposure{hashtag}")
+print(f"\nFor your current followers:{user_followers} these hashtags will give you the best exposure{hashtags}")
 
 print(f"\nYour campaign will last {duration } days")
 
 print(f"\nYour campaign will aprroximaitely cost: {average_cost_per_day} Dollars per day")
 
 print(f"\nYour campaign will cost: {total_cost} Dollars in total")
-
-print(f"\nThe best times to post are {user_follower_entry}")
-
-print(f"\nThe best day to post are {user_follower_entry}")
