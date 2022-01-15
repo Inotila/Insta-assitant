@@ -282,7 +282,7 @@ def main():
 
 main()
 
-
+balala = health_care["Best day"] 
 print(f"\nYou selected AADDADA as your industry {user_followers}")
 
 print(f"\nFor your current followers:{user_followers} these hashtags will give you the best exposure{hashtags}")
@@ -292,3 +292,5 @@ print(f"\nYour campaign will last {duration } days")
 print(f"\nYour campaign will aprroximaitely cost: {average_cost_per_day} Dollars per day")
 
 print(f"\nYour campaign will cost: {total_cost} Dollars in total")
+
+print(f"\nI hate this BS: {balala}s")
