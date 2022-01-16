@@ -70,7 +70,7 @@ hospitality = {
 
 def industry_indetifier():
     """
-    This function  matches the input of the users industry location,
+    This function  matches the input of the users industry,
     to which object/industry it is in
     """
 
