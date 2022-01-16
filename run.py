@@ -290,15 +290,21 @@ best_day = user_industry["Best day"]
 
 best_time = user_industry["best time to post"]
 
-print(f"\nAccording to your data your profile matches this: {user_industry}")
+example_hashtags = user_industry["hashtags"]
+
+user_industry = user_industry["industry"]
+
+print(f"\nYour profile is in this industry: {user_industry}")
 
 print(f"\nYou currently have:{user_followers} followers")
 
-print(f"\nThese hashtags will give you the best exposure{hashtags}")
+print(f"\nThese hashtags will give you the best exposure: {hashtags}")
+
+print(f"\nAn example of a hashtag to use: {example_hashtags }")
 
 print(f"\nThe best day to run youd is: {best_day}")
 
-print(f"\nThe best times to run youd is: {best_time}")
+print(f"\nThe best times to run your is: {best_time}")
 
 print(f"\nYour campaign will last {duration } days")
 
