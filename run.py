@@ -158,18 +158,18 @@ def get_users_followers():
 
             if type(user_follower_entry) != int:
                 raise ValueError(
-                    f"Please enter a number, you provided\
-                         {user_industry_selected}"
+                    "Please enter a number, you provided"
+                    f"-'{user_industry_selected}'"
                     )
             elif user_follower_entry < 0:
                 raise ValueError(
-                    f"You can't have negative followers, you provided\
-                         {user_industry_selected}"
+                    "You can't have negative followers, you provided"
+                    f"-'{user_industry_selected}'"
                     )
             elif user_follower_entry > 388000000:
                 raise ValueError(
-                    f"Exceeded highest followers, you provided\
-                        {user_industry_selected}"
+                    "Exceeded highest followers, you provided"
+                    f"-'{user_industry_selected}'"
                     )
             else:
                 break
