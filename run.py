@@ -1,6 +1,10 @@
+print("............................................................")
+
 print("Welcome to Insta-Assitant\n")
 
 print("Your instagram campaign assistant.\n")
+
+print("............................................................")
 
 name = input("Please enter your name:")
 
