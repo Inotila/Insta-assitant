@@ -86,13 +86,13 @@ def get_user_industry():
         social_media_industry = input(
             "\n Please enter which  number represents your industry:\n"
             )
-        try:          
+        try:
             user_industry_selected = int(social_media_industry)
             if type(user_industry_selected) != int:
                 raise ValueError(
                     f"Enter a number from the list, you provided \
                         {user_industry_selected}"
-                    )      
+                    )
             elif user_industry_selected > 9:
                 raise ValueError(
                     f"Enter only a number that is from the list, you provided, you provided\
@@ -104,7 +104,7 @@ def get_user_industry():
                          {user_industry_selected}"
                     )
             else:
-                break                    
+                break
         except ValueError as e:
             print(f"Invalid data: {e}, please try again.\n")
 
@@ -181,7 +181,7 @@ def get_users_followers():
 
 def get_users_sales_goals():
     """
-    This takes aninput for how man sales 
+    This takes aninput for how man sales
     the user wants to make from their campaign.
     It also has a validator to ensure an integer is entered and that
     the user enters amount no less that zero and no higher than
@@ -247,7 +247,7 @@ def ad_duration():
 
 def cost_calculation():
     """
-    Calculates how much the user will need to spend in order to 
+    Calculates how much the user will need to spend in order to
     meet their sales target
     """
     global total_cost
@@ -277,7 +277,7 @@ def type_of_hashtag_to_use():
     elif int(user_followers) <= 1000000:
         hashtags = "Use popular tags"
 
-    return hashtags   
+    return hashtags
 
 
 def main():
