@@ -195,7 +195,8 @@ def get_users_sales_goals():
     global campaign_reach
 
     while True:
-        campaign_reach = input("\nEnter sales target:\n")
+        campaign_reach = input("\nEnter how many people you" 
+        " want to reach:\n")
 
         try:
             users_sales_entery = int(campaign_reach)
