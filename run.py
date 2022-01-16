@@ -61,14 +61,14 @@ finance = {
     "industry": "Finance",
     "best time to post": ["Monday: 5 p.m.", "Wednesday: 9 a.m.–1 p.m."],
     "Best day": "Wednesday",
-    "hashtags": "#education",
+    "hashtags": "#finance",
     }
 
 hospitality = {
     "industry": "Hospitality",
     "best time to post": ["Wednesday: noon", "Friday: 8 a.m.–noon"],
     "Best day": "Friday",
-    "hashtags": "#education",
+    "hashtags": "#hospitality",
     }
 
 print(f"\n Hello {name}")
@@ -88,7 +88,8 @@ def get_user_industry():
 
     while True:
         social_media_industry = input(
-            "\n Please enter which  number represents your industry:\n"
+            "\nPlease enter a number from the above list"
+            "which represents your industry:\n"
             )
         try:
             user_industry_selected = int(social_media_industry)
