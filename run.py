@@ -89,7 +89,7 @@ def get_user_industry():
     while True:
         social_media_industry = input(
             "\nPlease enter a number from the above list"
-            "which represents your industry:\n"
+            " which represents your industry:\n"
             )
         try:
             user_industry_selected = int(social_media_industry)
