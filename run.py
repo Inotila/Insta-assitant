@@ -266,7 +266,7 @@ def type_of_hashtag_to_use():
         hashtags = "Use tags that are semi-popular"
     elif int(user_followers) <= 1000000:
         hashtags = "Use popular tags"
-    
+
     return hashtags   
 
 
