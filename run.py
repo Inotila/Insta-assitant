@@ -71,7 +71,7 @@ hospitality = {
     "hashtags": "#education",
     }
 
-print(f"\n Hello {name} ")
+print(f"\n Hello {name}")
 
 print("Instgram industry \n 1.Healthcare \n 2.Media\
     \n 3.Education \n 4.Nonprofit \n 5.Restaurants \n 6.Tech\
@@ -216,6 +216,8 @@ def get_users_sales_goals():
 
     return users_sales_entery
 
+print("Calculating total cost of ad campaign...")
+
 
 def ad_duration():
     """
@@ -247,6 +249,8 @@ def ad_duration():
             print(f"Invalid data: {e}, please try again.\n")
 
     return users_duration_entery
+
+print("Calculating average cost of ad campaign...")
 
 
 def cost_calculation():
@@ -308,6 +312,14 @@ best_time = user_industry["best time to post"]
 example_hashtags = user_industry["hashtags"]
 
 user_industry = user_industry["industry"]
+
+print("Generating results...")
+
+print("............................................................")
+
+print("---FINAL RECOMMENDATIONS---")
+
+print("............................................................")
 
 print(f"\nYour profile is in this industry: {user_industry}")
 
