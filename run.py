@@ -90,18 +90,18 @@ def get_user_industry():
             user_industry_selected = int(social_media_industry)
             if type(user_industry_selected) != int:
                 raise ValueError(
-                    f"Enter a number from the list, you provided \
-                        {user_industry_selected}"
+                    "Enter a number from the list, you provided"
+                    f"- '{user_industry_selected}'"
                     )
             elif user_industry_selected > 9:
                 raise ValueError(
-                    f"Enter only a number that is from the list, you provided, you provided\
-                         {user_industry_selected}"
+                    "Enter only a number that is from the list, you provided"
+                    f"- '{user_industry_selected}'"
                     )
             elif user_industry_selected < 1:
                 raise ValueError(
-                    f"Enter a number between 1 and 9, you provided \
-                         {user_industry_selected}"
+                    "Enter a number between 1 and 9, you provided"
+                    f"-'{user_industry_selected}'"
                     )
             else:
                 break
