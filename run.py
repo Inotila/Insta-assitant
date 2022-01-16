@@ -67,14 +67,6 @@ hospitality = {
     "hashtags": "#education",
     }
 
-
-def industry_indetifier():
-    """
-    This function  matches the input of the users industry,
-    to which object/industry it is in
-    """
-
-
 print(f"\n Hello {name} ")
 
 print("Instgram industry \n 1.Healthcare \n 2.Media\
@@ -84,7 +76,8 @@ print("Instgram industry \n 1.Healthcare \n 2.Media\
 
 def get_user_industry():
     """
-    this function takes the input for what industry the user is in
+    This function takes the input for the user 
+    to so select which industry they belong to
     """
     global social_media_industry
     global user_industry_selected
@@ -112,6 +105,11 @@ def get_user_industry():
 
     return user_industry_selected
 
+def industry_indetifier():
+    """
+    This function  matches the input of the users industry,
+    to which object/industry it is in
+    """
     global user_industry
     user_industry = "Empty str"
 
