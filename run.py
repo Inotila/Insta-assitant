@@ -237,7 +237,8 @@ def ad_duration():
 
 def cost_calculation():
     """
-    Calculates how much the user will need to spend in order to sales target
+    Calculates how much the user will need to spend in order to 
+    meet their sales target
     """
     global total_cost
     campaign_reach_needed = int(campaign_reach) * 1.25
@@ -248,7 +249,7 @@ def cost_calculation():
 
 def average_cost():
     """
-    Calculates how much the user will need to spend in order to sales target
+    Calculates how much the user will need to spend on average per day on ad
     """
     global average_cost_per_day
     average_cost_per_day = total_cost / int(duration)
@@ -260,19 +261,11 @@ def type_of_hashtag_to_use():
     global hashtags
     hashtags = ""
     if int(user_followers) <= 10000:
-        hashtags = "niche"
+        hashtags = "Use niche has tags that are not so popular"
     elif int(user_followers) <= 100000:
-        hashtags = "big time"
+        hashtags = "Use tags that are semi-popular"
     elif int(user_followers) <= 1000000:
-        hashtags = "superstar"
-    elif int(user_followers) <= 10000000:
-        hashtags = "cr7"
-    elif int(user_followers) <= 100000000:
-        hashtags = "kardashian"
-    elif int(user_followers) <= 500000000:
-        hashtags = "mj"
-    else:
-        print("wtf")
+        hashtags = "Use popular tags"
     
     return hashtags   
 
@@ -293,15 +286,24 @@ def main():
 
 main()
 
-balala = health_care["Best day"] 
-print(f"\nYou selected AADDADA as your industry {user_followers}")
+best_day = user_industry["Best day"]
 
-print(f"\nFor your current followers:{user_followers} these hashtags will give you the best exposure{hashtags}")
+best_time = user_industry["best time to post"]
+
+print(f"\nAccording to your data your profile matches this: {user_industry}")
+
+print(f"\nYou currently have:{user_followers} followers")
+
+print(f"\nThese hashtags will give you the best exposure{hashtags}")
+
+print(f"\nThe best day to run youd is: {best_day}")
+
+print(f"\nThe best times to run youd is: {best_time}")
 
 print(f"\nYour campaign will last {duration } days")
 
-print(f"\nYour campaign will aprroximaitely cost: {average_cost_per_day} Dollars per day")
+print(f"\nYour average per day cost will be: {average_cost_per_day} Dollars")
 
-print(f"\nYour campaign will cost: {total_cost} Dollars in total")
+print(f"\nYour Total cost: {total_cost} Dollars in total")
 
-print(f"\nI hate this BS: {balala}s")
+print(f"We look forward to your success {name}")
