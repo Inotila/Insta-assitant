@@ -76,14 +76,16 @@ print("Instgram industry \n 1.Healthcare \n 2.Media\
 
 def get_user_industry():
     """
-    This function takes the input for the user 
+    This function takes the input for the user
     to so select which industry they belong to
     """
     global social_media_industry
     global user_industry_selected
 
     while True:
-        social_media_industry = input("\n Please enter which  number represents your industry:\n")
+        social_media_industry = input(
+            "\n Please enter which  number represents your industry:\n"
+            )
         try:          
             user_industry_selected = int(social_media_industry)
             if type(user_industry_selected) != int:
@@ -104,6 +106,7 @@ def get_user_industry():
             print(f"Invalid data: {e}, please try again.\n")
 
     return user_industry_selected
+
 
 def industry_indetifier():
     """
@@ -137,7 +140,10 @@ def industry_indetifier():
 
 def get_users_followers():
     """
-    this takes a validated input for how man followers the user has
+    This takes an input for how man followers the user has,
+    it also has a validator to ensure an integer is entered and that
+    the user enters amount no less that zero and no higher than
+    the highest instagram profile
     """
     global user_followers
 
@@ -169,7 +175,8 @@ def get_users_followers():
 
 def get_users_sales_goals():
     """
-    this takes a validated input for how man sales the user wants to make from their campaign
+    this takes a validated input for how man sales 
+    the user wants to make from their campaign
     """
     global campaign_reach
 
