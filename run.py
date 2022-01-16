@@ -159,17 +159,17 @@ def get_users_followers():
             if type(user_follower_entry) != int:
                 raise ValueError(
                     "Please enter a number, you provided"
-                    f"-'{user_industry_selected}'"
+                    f"-'{user_follower_entry}'"
                     )
             elif user_follower_entry < 0:
                 raise ValueError(
                     "You can't have negative followers, you provided"
-                    f"-'{user_industry_selected}'"
+                    f"-'{user_follower_entry}'"
                     )
             elif user_follower_entry > 388000000:
                 raise ValueError(
                     "Exceeded highest followers, you provided"
-                    f"-'{user_industry_selected}'"
+                    f"-'{user_follower_entry}'"
                     )
             else:
                 break
@@ -197,13 +197,13 @@ def get_users_sales_goals():
 
             if type(users_sales_entery) != int:
                 raise ValueError(
-                    f"Please enter a number, you provided \
-                        {user_industry_selected}"
+                    "Please enter a number, you provided"
+                    f"-'{users_sales_entery}'"
                     )
             elif users_sales_entery < 133:
                 raise ValueError(
-                    f"A minimum requirement of 133 is required, you provided\
-                        {user_industry_selected}"
+                    "A minimum requirement of 133 is required, you provided"
+                    f"-'{users_sales_entery}'"
                     )
             else:
                 break
@@ -217,7 +217,7 @@ def ad_duration():
     """
     This takes a validated input for how long the campaign will last.
     It also has a validator to ensure an integer is entered and that
-    the user enters amount no less that zero
+    the user enters amount no less that zero.
     """
     global duration
 
@@ -229,13 +229,13 @@ def ad_duration():
 
             if type(users_duration_entery) != int:
                 raise ValueError(
-                    f"Please enter a number, you provided \
-                         {user_industry_selected}"
+                    "Please enter a number, you provided"
+                    f"-'{user_industry_selected}'"
                     )
             elif users_duration_entery <= 0:
                 raise ValueError(
-                    f"Please enter a number from 1 or higher, you provided \
-                        {user_industry_selected}"
+                    "Please enter a number from 1 or higher, you provided"
+                    f"-'{user_industry_selected}'"
                     )
             else:
                 break
@@ -248,7 +248,8 @@ def ad_duration():
 def cost_calculation():
     """
     Calculates how much the user will need to spend in order to
-    meet their sales target
+    meet their sales target. It multiplies the sales target of the user
+    by 1.25 as it is projected that only 25% of ads are successful.
     """
     global total_cost
     campaign_reach_needed = int(campaign_reach) * 1.25
