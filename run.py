@@ -288,6 +288,13 @@ def average_cost():
 
 
 def type_of_hashtag_to_use():
+    """
+    This function takes the number of followers
+    the user has, and recommends them to what type of hashtags
+    they should to get the most exposure.
+    Instgram alogorithms will rank you better if your tags are in the
+    correct pool"
+    """
     global hashtags
     hashtags = ""
     if int(user_followers) <= 10000:
