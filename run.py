@@ -175,8 +175,11 @@ def get_users_followers():
 
 def get_users_sales_goals():
     """
-    this takes a validated input for how man sales 
-    the user wants to make from their campaign
+    This takes aninput for how man sales 
+    the user wants to make from their campaign.
+    It also has a validator to ensure an integer is entered and that
+    the user enters amount no less that zero and no higher than
+    the highest instagram profile
     """
     global campaign_reach
 
@@ -204,7 +207,9 @@ def get_users_sales_goals():
 
 def ad_duration():
     """
-    this takes a validated input for how long the campaign will last
+    This takes a validated input for how long the campaign will last.
+    It also has a validator to ensure an integer is entered and that
+    the user enters amount no less that zero
     """
     global duration
 
