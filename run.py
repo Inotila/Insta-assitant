@@ -6,15 +6,15 @@ name = input("Please enter your name:")
 
 health_care = {
     "industry": "Healthcare",
-    "best time to post": ["Sunday: 8–9 a.m.", "Tuesday: 8 a.m.–noon", " Tuesday: 5–8 p.m."],
-    "Best day": "Monday, Tuesday",
+    "best time to post": ["Tuesday: 8 a.m.–noon", " Tuesday: 5–8 p.m."],
+    "Best day": "Monday and Tuesday",
     "hashtags": "#HealthCare",
 }
 
 media = {
     "industry": "Media",
-    "best time to post": ["Tuesday: 1–5 p.m.", "Wednesday: 11 a.m", "Thursday: 8–9 a.m."],
-    "Best day": "Tuesday, Wednesday, Thursday",
+    "best time to post": ["Tuesday: 1–5 p.m.", "Wednesday: 11 a.m"],
+    "Best day": "Tuesday and  Wednesday",
     "hashtags": "#media",
 }
 
@@ -41,28 +41,28 @@ restaurants = {
 
 tech = {
     "industry": "Tech",
-    "best time to post": ["Monday: 10–11 a.m.", "Monday: 2–5 p.m.", "Monday: 8 p.m.", "Tuesday: 10 a.m.–1 p.m", "Thursday: noon", "Friday: 11 a.m"],
+    "best time to post": ["Monday: 10–11 a.m.", "Tuesday: 10 a.m.–1 p.m"],
     "Best day": "Monday",
     "hashtags": "#Tech",
     }
 
 travel_and_tourism = {
     "industry": "Travel & Tourism",
-    "best time to post": ["Monday: 11 a.m–3 p.m.", "Thursday: 9 a.m.–1 p.m.", " Friday: 10 a.m.–noon"],
+    "best time to post": ["Monday: 11 a.m–3 p.m.", "Thursday: 9 a.m.–1 p.m."],
     "Best day": "Thursday",
     "hashtags": "#education",
     }
 
 finance = {
     "industry": "Finance",
-    "best time to post": ["Monday: 5 p.m.", "Wednesday: 9 a.m.–1 p.m.", " Friday: 11 a.m."],
+    "best time to post": ["Monday: 5 p.m.", "Wednesday: 9 a.m.–1 p.m."],
     "Best day": "Wednesday",
     "hashtags": "#education",
     }
 
 hospitality = {
     "industry": "Hospitality",
-    "best time to post": ["Wednesday: noon", "Thursday : 3–4 p.m.", "Friday: 8 a.m.–noon"],
+    "best time to post": ["Wednesday: noon", "Friday: 8 a.m.–noon"],
     "Best day": "Friday",
     "hashtags": "#education",
     }
