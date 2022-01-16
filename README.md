@@ -1,31 +1,79 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+#Insta-assistant
 
-Welcome Inotila,
+Insta-assistant is a Python terminal social media assistant. Insta-assistant is running on Code Institutes mock terminal on Heroku.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+Users can uses this app to generate recommendations for a successful instgram social media campaign. In addiiton they can also get financial projections on how much it will cost them to run their ad.
 
-## Reminders
+Click here for the live version of Insta-assistant
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+## How to use the app
 
-## Creating the Heroku app
+The app is fairly easy to use. It will ask you a few simple questions about the type of socia media page you have, and using that data
+is will recommend the best days and times for you to post. In addition, it will also recommend what type of hashtags would be most effective. 
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+After entering your profile details, the app will ask about your sales targets. Using these figures, it will calculate the costs that will be incurred by you/the user. 
 
-1. `heroku/python`
-2. `heroku/nodejs`
+All this information will be displayed in an easy to ready manner at the end.
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+## Features
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+### Existing Features
 
-Connect your GitHub repository and deploy as normal.
+proofile matching
 
-## Constraints
+recommendations
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+calculations
 
------
-Happy coding!
+## Future Features
+
+Hashrag genarators
+
+Autofind profile data
+
+## Data Model
+
+I used dicitionaries as my model. These hold the basic data information of the varoius industry categories one can find on instagram.
+
+I also use methods to calculate and match the data in the dicitionaies"
+
+## Testing 
+
+I manually tested the application using the following actions:
+
+1. Passed the code in a code validator
+2. Raised erros for invalid inputs, and looped the input until a valid input is entered
+3. I tested it using my local terminal abd the Code Institute Heroku terminal
+
+## Bugs
+
+### Solved Bugs 
+
+1. My lines were too long
+2. I had wrong indetations
+
+### Remaining Bugs
+
+1. No remaining bugs
+
+## Validator Testing 
+
+1. PEP8
+No errors were returned form the PEP8 online validator
+
+## Deployment 
+
+This project has been deployed on Heroku using the Code Institute mock terminal
+
+### Steps for Deployemeny:
+Push main page of this repository
+Create a new Heroku app
+Set Python and NodeJs in this order is buildbacks
+Connect Heroku to repository
+Click deploy
+
+## Credits
+All code and algorithims used are my own.
+I used faceback to find out what the prices of advestring
+And i information from https://sproutsocial.com/insights/best-times-to-post-on-social-media/ on what the best times to post are
+I 
