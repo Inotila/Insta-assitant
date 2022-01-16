@@ -81,7 +81,7 @@ print("\n Instagram industry options:\n 1.Healthcare \n 2.Media\
 def get_user_industry():
     """
     This function takes the input for the user
-    to so select which industry they belong to
+    to select which industry they belong to
     """
     global social_media_industry
     global user_industry_selected
