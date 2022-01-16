@@ -90,15 +90,18 @@ def get_user_industry():
             user_industry_selected = int(social_media_industry)
             if type(user_industry_selected) != int:
                 raise ValueError(
-                    f"Enter only a number that is from the list, you provided {user_industry_selected}"
+                    f"Enter a number from the list, you provided \
+                        {user_industry_selected}"
                     )      
             elif user_industry_selected > 9:
                 raise ValueError(
-                    f"Enter only a number that is from the list, you provided, you provided {user_industry_selected}"
+                    f"Enter only a number that is from the list, you provided, you provided\
+                         {user_industry_selected}"
                     )
             elif user_industry_selected < 1:
                 raise ValueError(
-                    f"Enter only a number that is from the list, you provided, you provided {user_industry_selected}"
+                    f"Enter a number between 1 and 9, you provided \
+                         {user_industry_selected}"
                     )
             else:
                 break                    
@@ -134,7 +137,7 @@ def industry_indetifier():
         user_industry = finance
     elif social_media_industry == 9:
         user_industry = hospitality
-    
+
     return user_industry
 
 
@@ -155,15 +158,18 @@ def get_users_followers():
 
             if type(user_follower_entry) != int:
                 raise ValueError(
-                    f"Please enter a number, you provided {user_industry_selected}"
+                    f"Please enter a number, you provided\
+                         {user_industry_selected}"
                     )
             elif user_follower_entry < 0:
                 raise ValueError(
-                    f"You can't have negative followers, you provided {user_industry_selected}"
+                    f"You can't have negative followers, you provided\
+                         {user_industry_selected}"
                     )
             elif user_follower_entry > 388000000:
                 raise ValueError(
-                    f"The profile with the highest number of followers has 388 million, you provided {user_industry_selected}"
+                    f"Exceeded highest followers, you provided\
+                        {user_industry_selected}"
                     )
             else:
                 break
@@ -184,18 +190,20 @@ def get_users_sales_goals():
     global campaign_reach
 
     while True:
-        campaign_reach = input("\nEnter number of sales you would like to make from this campaign:\n")
+        campaign_reach = input("\nEnter sales target:\n")
 
         try:
             users_sales_entery = int(campaign_reach)
 
             if type(users_sales_entery) != int:
                 raise ValueError(
-                    f"Please enter a number, you provided {user_industry_selected}"
+                    f"Please enter a number, you provided \
+                        {user_industry_selected}"
                     )
             elif users_sales_entery < 133:
                 raise ValueError(
-                    f"Instgram has a minimum requirement of at 133 audiance reach, you provided {user_industry_selected}"
+                    f"A minimum requirement of 133 is required, you provided\
+                        {user_industry_selected}"
                     )
             else:
                 break
@@ -221,11 +229,13 @@ def ad_duration():
 
             if type(users_duration_entery) != int:
                 raise ValueError(
-                    f"Please enter a number, you provided {user_industry_selected}"
+                    f"Please enter a number, you provided \
+                         {user_industry_selected}"
                     )
             elif users_duration_entery <= 0:
                 raise ValueError(
-                    f"Please enter a number from 1 or higher, you provided {user_industry_selected}"
+                    f"Please enter a number from 1 or higher, you provided \
+                        {user_industry_selected}"
                     )
             else:
                 break
