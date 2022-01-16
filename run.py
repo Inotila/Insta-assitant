@@ -281,7 +281,7 @@ def average_cost():
     Calculates how much the user will need to spend on average per day on ad
     """
     global average_cost_per_day
-    average_cost_per_day = total_cost / int(duration)
+    average_cost_per_day = round(total_cost / int(duration))
 
     return average_cost_per_day
 
