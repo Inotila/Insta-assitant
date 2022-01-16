@@ -217,7 +217,11 @@ def get_users_sales_goals():
     return users_sales_entery
 
 
-print("Calculating total cost of ad campaign...")
+def user_feedback():
+    """
+    Provide user with some feedback feedback
+    """
+    print("\nCalculating total cost of ad campaign...")
 
 
 def ad_duration():
@@ -251,7 +255,12 @@ def ad_duration():
 
     return users_duration_entery
 
-print("Calculating average cost of ad campaign...")
+
+def user_feedback_two():
+    """
+    Provide user with some feedback feedback
+    """
+    print("\nCalculating average cost of ad campaign...")
 
 
 def cost_calculation():
@@ -298,9 +307,11 @@ def main():
     industry_indetifier()
     get_users_followers()
     get_users_sales_goals()
+    user_feedback()
     type_of_hashtag_to_use()
     cost_calculation()
     ad_duration()
+    user_feedback_two()
     average_cost()
 
 
@@ -314,7 +325,7 @@ example_hashtags = user_industry["hashtags"]
 
 user_industry = user_industry["industry"]
 
-print("Generating results...")
+print("\nGenerating results...")
 
 print("............................................................")
 
@@ -338,7 +349,7 @@ print(f"\nYour campaign will last {duration } days")
 
 print(f"\nYour average per day cost will be: {average_cost_per_day} Dollars")
 
-print(f"\nYour Total cost: {total_cost} Dollars in total")
+print(f"\nYour Total cost: {round(total_cost)} Dollars in total")
 
 print(f"\nWe look forward to your successful ad campaign, {name}!")
 
