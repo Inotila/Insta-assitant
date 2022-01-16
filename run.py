@@ -216,6 +216,7 @@ def get_users_sales_goals():
 
     return users_sales_entery
 
+
 print("Calculating total cost of ad campaign...")
 
 
@@ -339,6 +340,6 @@ print(f"\nYour average per day cost will be: {average_cost_per_day} Dollars")
 
 print(f"\nYour Total cost: {total_cost} Dollars in total")
 
-print(f"We look forward to your successful ad campaign, {name}!")
+print(f"\nWe look forward to your successful ad campaign, {name}!")
 
-print("............................................................")
+print("\n............................................................")
