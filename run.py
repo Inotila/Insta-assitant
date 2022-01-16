@@ -280,7 +280,7 @@ def type_of_hashtag_to_use():
     global hashtags
     hashtags = ""
     if int(user_followers) <= 10000:
-        hashtags = "Use niche has tags that are not so popular"
+        hashtags = "Use niche hashtags that are not so popular"
     elif int(user_followers) <= 100000:
         hashtags = "Use tags that are semi-popular"
     elif int(user_followers) <= 1000000:
@@ -317,7 +317,7 @@ print("Generating results...")
 
 print("............................................................")
 
-print("---FINAL RECOMMENDATIONS---")
+print("-------------------FINAL RECOMMENDATIONS-------------------")
 
 print("............................................................")
 
@@ -339,4 +339,6 @@ print(f"\nYour average per day cost will be: {average_cost_per_day} Dollars")
 
 print(f"\nYour Total cost: {total_cost} Dollars in total")
 
-print(f"We look forward to your success {name}")
+print(f"We look forward to your successful ad campaign, {name}!")
+
+print("............................................................")
