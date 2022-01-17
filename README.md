@@ -1,12 +1,14 @@
 # Insta-assistant
 
+<img src="./assets/images/reponsive.png" width="700">
+
 Insta-assistant is a Python terminal social media assistant. Insta-assistant is running on Code Institutes mock terminal on Heroku. The app is for small to medium business owners who are not so familar with instagram or who just want to prepare a budget for a instagram ad campaign.
 
 Users can uses this app to generate recommendations for a successful instgram social media campaign. In addiiton they can also get financial projections on how much it will cost them to run their ad.
 
 The app will ask the user a series of questions and if/when all inputs are correct it will generate a summary result.
 
-Click here for the live version of Insta-assistant
+Click here for the live version of Insta-assistant: https://insta-assistant.herokuapp.com/
 
 ## How to use the app
 
@@ -27,15 +29,21 @@ All this information will be displayed in an easy to ready display at the end.
 ### Existing Features
 
 Profile matching
+<img src="./assets/images/screenshot_1.png" width="700">
+
 Your profile is matched to type of industry profile it belongs to. Using that data it is determined what the best times to post are. In addition an example a hashtags for that profile is given.
 
 Recommendations
+<img src="./assets/images/screenshot_4.png" width="700">
+
 The app generates a recommendations on what type hashtags are best for the size/number of followers the users profile has. 
 
 It also gives recommendations on what days and times are best to post
 
 
 Calculations
+<img src="./assets/images/screenshot_2.png" width="700">
+
 A calculation on how much the total cost of the ad campaign will be.
 
 A calculation on what the average cost per day of the ad campaign will be.
@@ -52,6 +60,8 @@ Print out
 The will be an option to print out the apps findings so that the user will not need to re-enter their details again.
 
 ## Data Model
+
+<img src="./assets/images/flowchart.jpg" width="700">
 
 I used dictionaries as my model. These hold the basic data information of the various industry categories one can find on Instagram. The app has 9 dictionaries, which match the 9 possible inputs for what type of industry the user is in.
 
@@ -82,6 +92,8 @@ I manually tested the application using the following actions:
 ## Validator Testing 
 
 1. PEP8
+<img src="./assets/images/validator.png" width="700">
+
 No errors were returned form the PEP8 online validator
 
 ## Deployment 
