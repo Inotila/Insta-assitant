@@ -132,15 +132,15 @@ def industry_indetifier():
         user_industry = education
     elif user_industry_selected == 4:
         user_industry = nonprofit
-    elif social_media_industry == 5:
+    elif user_industry_selected == 5:
         user_industry = restaurants
-    elif social_media_industry == 6:
+    elif user_industry_selected == 6:
         user_industry = tech
-    elif social_media_industry == 7:
+    elif user_industry_selected == 7:
         user_industry = travel_and_tourism
-    elif social_media_industry == 8:
+    elif user_industry_selected == 8:
         user_industry = finance
-    elif social_media_industry == 9:
+    elif user_industry_selected == 9:
         user_industry = hospitality
 
     return user_industry
