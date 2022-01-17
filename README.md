@@ -1,35 +1,55 @@
-#Insta-assistant
+# Insta-assistant
 
-Insta-assistant is a Python terminal social media assistant. Insta-assistant is running on Code Institutes mock terminal on Heroku.
+Insta-assistant is a Python terminal social media assistant. Insta-assistant is running on Code Institutes mock terminal on Heroku. The app is for small to medium business owners who are not so familar with instagram or who just want to prepare a budget for a instagram ad campaign.
 
 Users can uses this app to generate recommendations for a successful instgram social media campaign. In addiiton they can also get financial projections on how much it will cost them to run their ad.
+
+The app will ask the user a series of questions and if/when all inputs are correct it will generate a summary result.
 
 Click here for the live version of Insta-assistant
 
 ## How to use the app
 
-The app is fairly easy to use. It will ask you a few simple questions about the type of socia media page you have, and using that data
-is will recommend the best days and times for you to post. In addition, it will also recommend what type of hashtags would be most effective. 
+The app is fairly easy to use. It will ask you a few simple questions about the type of socia media page you have, and you simply answer them by entering an input. Once you have inputed your answer simple press enter and it will move on to the question.
 
-After entering your profile details, the app will ask about your sales targets. Using these figures, it will calculate the costs that will be incurred by you/the user. 
+The questions are short, and failry straight forward. So anyone should be able to answer theem.
 
-All this information will be displayed in an easy to ready manner at the end.
+The app starts with questions about your profile, this is so that it detirmines what type of profile you have. 
+
+After the profile questions,the app will ask the user about their ad campaign. Using these figures, it will calculate the costs that will be incurred by you/the user.
+
+Apart from the users names, all other inputs are numbers, and if all inputs are correct the app willl generate a summary of a basic layout on how your ad campiagn should look.
+
+All this information will be displayed in an easy to ready display at the end.
 
 ## Features
 
 ### Existing Features
 
-proofile matching
+Profile matching
+Your profile is matched to type of profile, where it is detirimined what are the best times to post and examples what hashtags for that profile look like.
 
-recommendations
+Recommendations
+The app generates a recommendations on what type hashtags are best for the size/number of followers the users profile has. 
 
-calculations
+It also gives recommendations on what days and times are best to post
+
+
+Calculations
+A calculationon how much the total cost of the ad campaign will be.
+
+A calculation on what the average cost per day of the add campaign will be.
 
 ## Future Features
 
-Hashrag genarators
+Hashtag genarators
+In the future versions of the app, it will generate hashtags that will suit the profile and the type of product the users plans on running in the ad campaign.
 
-Autofind profile data
+Auto-find profile data
+The user will not have to answer questions about their followers, and industry etc.They will just need to enter their instagram profile and the app will use an API to get those details.
+
+Print out
+The will be an option to print out the apps findings so that the user will not need to re-enter their details again.
 
 ## Data Model
 
